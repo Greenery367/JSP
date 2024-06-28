@@ -1,0 +1,40 @@
+package com.tenco;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+/**
+ * Servlet implementation class MyServlet
+ */
+public class MyServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    public MyServlet() {
+        super();
+    }
+
+    @Override
+    public void init() throws ServletException {
+    	super.init();
+    }
+    
+    // 클라이언트가 매번 요청을 하는데 매번 호출이 될까?
+    @Override
+    protected void service(HttpServletRequest arg0, HttpServletResponse arg1) throws ServletException, IOException {
+    	super.service(arg0, arg1);
+    	System.out.println("");
+    }
+    
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
+	}
+
+}

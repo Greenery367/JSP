@@ -1,9 +1,0 @@
-package com.tenco;
-
-import jakarta.servlet.http.HttpServlet;
-
-public class Echo2 extends HttpServlet {
-
-	
-	
-}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.container{
+		display: flex;
+		flex-wrap:wrap;
+		border: 2px solid #333;
+		padding: 10px;
+		width:600px;
+		height: 280px;
+		background-color: #f9f9f9;
+		flex-direction: row;
+	}
+	.item {
+		background-color: #9D0909;
+		color: white;
+		padding: 20px;
+		margin: 10px;
+		text-align:center;
+		border-radius: 5px;
+		width: 150px;
+	}
+</style>
+</head>
+<body>
+	
+	
+	<h2>align-content: flex-start</h2>
+	<div class="container" style="align-content: flex-start;">
+		<div class="item">아이템1</div>
+		<div class="item">아이템2</div>
+		<div class="item">아이템3</div>
+		<div class="item">아이템4</div>
+	</div>
+	
+	<h2>align-content: flex-end</h2>
+	<div class="container" style="align-content: flex-end;">
+		<div class="item">아이템1</div>
+		<div class="item">아이템2</div>
+		<div class="item">아이템3</div>
+		<div class="item">아이템4</div>
+	</div>
+	
+	<h2>align-content: center</h2>
+	<div class="container" style="align-content: center;">
+		<div class="item">아이템1</div>
+		<div class="item">아이템2</div>
+		<div class="item">아이템3</div>
+		<div class="item">아이템4</div>
+	</div>
+	
+	<h2>align-content: space-between</h2>
+	<div class="container" style="align-content: space-between;">
+		<div class="item">아이템1</div>
+		<div class="item">아이템2</div>
+		<div class="item">아이템3</div>
+		<div class="item">아이템4</div>
+	</div>
+	
+	<h2>align-content: space-around</h2>
+	<div class="container" style="align-content: space-around;">
+		<div class="item">아이템1</div>
+		<div class="item">아이템2</div>
+		<div class="item">아이템3</div>
+		<div class="item">아이템4</div>
+	</div>
+	
+	<h2>align-content: stretch(기본)</h2>
+	<div class="container" style="align-content: stretch;">
+		<div class="item">아이템1</div>
+		<div class="item">아이템2</div>
+		<div class="item">아이템3</div>
+		<div class="item">아이템4</div>
+	</div>
+</body>
+</html>
